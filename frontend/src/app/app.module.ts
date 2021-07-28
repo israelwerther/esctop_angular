@@ -38,6 +38,8 @@ import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 registerLocaleData(localePt);
 
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+
 
 @NgModule({
   declarations: [
@@ -48,7 +50,8 @@ registerLocaleData(localePt);
     ReadComponent,
     UpdateComponent,
     DeleteComponent,
-    CrudCredcoopComponent
+    CrudCredcoopComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
