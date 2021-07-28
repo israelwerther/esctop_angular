@@ -1,6 +1,105 @@
-{    
-    "clienteCredcoop": [{
-        "id": 1,
-        "name": "israel"
-    }]
+{
+  "clienteCredcoop": [
+    {
+      "id": 1,
+      "name": "israel"
+    },
+    {
+      "dadosPessoais": {
+        "nome": "Recusandae Officia bland",
+        "cpf": "12312312312",
+        "rg": "Nam corporis ex ut molest",
+        "orgaoEmissor": "Dolorum vero dolor deseru",
+        "dataNascimento": "1991-04-07",
+        "naturalidade": "Quae error lorem exercita",
+        "nacionalidade": "Sit quos vel sint consect",
+        "estadoCivil": "In lorem voluptas volupta",
+        "nomeDaMae": "Voluptates quo facilis qu",
+        "nomeDoPai": "Quaerat minus cillum elig"
+      },
+      "dadosConjuge": {
+        "nomeConjuge": "Dicta rem natus nobis sun",
+        "cpfConjuge": "32132132112",
+        "contatoConjuge": "",
+        "whatsapp": true
+      },
+      "enderecos": [
+        {
+          "cep": "",
+          "rua": "Cupidatat voluptatem ven",
+          "bairro": "Corporis possimus dignis",
+          "uf": "Quia commodi quisquam eaq",
+          "cidade": "Soluta quod at deserunt n",
+          "numero": "Ad porro et similique dol",
+          "complemento": "Dolore ipsum officiis aut",
+          "pontoDeReferencia": "Consequuntur mollit provi"
+        }
+      ],
+      "contato": {
+        "fixo": [
+          {
+            "numero": "",
+            "ativo": true
+          }
+        ],
+        "celular": [
+          {
+            "numero": "",
+            "ativo": true,
+            "whatsapp": true
+          }
+        ],
+        "email": "tugyfy@mailinator.com"
+      },
+      "localDeTrabalho": {
+        "nomeFantasia": "",
+        "enderecos": [
+          {
+            "cep": "",
+            "rua": "",
+            "bairro": "",
+            "uf": "",
+            "cidade": "",
+            "numero": "",
+            "complemento": "",
+            "pontoDeReferencia": ""
+          }
+        ],
+        "contato": {
+          "fixo": [
+            {
+              "numero": "",
+              "ativo": true
+            }
+          ],
+          "celular": [
+            {
+              "numero": "",
+              "ativo": true,
+              "whatsapp": false
+            }
+          ],
+          "email": ""
+        },
+        "observacoes": ""
+      },
+      "dadosBancarios": [
+        {
+          "banco": "",
+          "numeroDaOperacao": "",
+          "tipoDeConta": "",
+          "numeroDaAgencia": "",
+          "numeroDaconta": ""
+        }
+      ],
+      "referencias": [
+        {
+          "nome": "",
+          "contato": "",
+          "parentesco": ""
+        }
+      ],
+      "id": 2
+    }
+  ]
 }
