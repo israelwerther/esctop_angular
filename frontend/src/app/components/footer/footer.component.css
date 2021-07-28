@@ -1,0 +1,12 @@
+.footer {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  height: 40px;
+}
+
+/* estudar com '>' afeta o style */
+.footer > span {
+  font-size: 1.1rem;
+  font-weight: 300;
+}

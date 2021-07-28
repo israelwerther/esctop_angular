@@ -1,0 +1,29 @@
+.sidenav {
+  background-color:#00255c;
+  width: 200px;
+}
+
+.sidenav a {
+  color: #ecfdeb;
+}
+mat-nav-list a:hover {
+  color: #ae9e9e;
+  background-color:#004066;
+  transform: scale(1.03);
+  background: linear-gradient(90deg, #004066 0%, #256274 100%);
+}
+
+.sidenav i {
+  padding-right: 10px;
+}
+
+.content {
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+.color1 {color: #00255c;}
+.color2 {color: #004066;}
+.color3 {color: #256274;}
+.color4 {color: #758487;}
+.color5 {color: #ae9e9e;}
