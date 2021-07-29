@@ -42,6 +42,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AdminComponent } from './components/admin/admin.component';
+import { BancoComponent } from './components/admin/banco/banco.component';
 
 
 @NgModule({
@@ -57,7 +58,8 @@ import { AdminComponent } from './components/admin/admin.component';
     SidebarComponent,
     HeaderComponent,
     FooterComponent,
-    AdminComponent
+    AdminComponent,
+    BancoComponent
   ],
   imports: [
     BrowserModule,
