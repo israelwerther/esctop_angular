@@ -43,6 +43,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { BancoComponent } from './components/admin/banco/banco.component';
+import { CrudAdminComponent } from './components/admin/crud-admin/crud-admin.component';
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import { BancoComponent } from './components/admin/banco/banco.component';
     HeaderComponent,
     FooterComponent,
     AdminComponent,
-    BancoComponent
+    BancoComponent,
+    CrudAdminComponent
   ],
   imports: [
     BrowserModule,
