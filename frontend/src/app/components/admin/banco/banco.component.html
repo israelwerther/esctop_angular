@@ -1,1 +1,52 @@
-<p>banco works!</p>
+<mat-card class="mat-elevation-z5">
+	<form class="mat-elevation-z5">
+		<div class="row">
+			<div class="col-sm-12 py-2">
+				<mat-card-title class="w-100">
+					Cadastro Bancos
+				</mat-card-title>
+			</div>
+			<div class="col-sm-4" *ngFor="let banco of bancos; index as indexDoBanco; last as isLast">
+				<mat-form-field >
+					<mat-label>Banco</mat-label>
+					<input matInput placeholder="Ex: 000-BANCO CREDCOOP" [(ngModel)]="banco.nomeDoBanco" name="nomeDoBanco{{indexDoBanco}}">
+					<button class="my-1 mx-0 close-button" (click)="this.bancos.pop()"
+					*ngIf="indexDoBanco > 0 && isLast"
+					matSuffix mat-icon-button aria-label="Clear">
+						<i class="material-icons d-flex align-items-center">
+							&times;
+						</i>
+					</button>
+				</mat-form-field>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<button mat-raised-button primary (click)="this.bancos.push({nomeDoBanco: ''})" style="width:100%">
+					+1 Banco
+				</button>
+			</div>
+		</div>
+		<br>
+	</form>
+	<div class="mat-elevation-z5">
+		<div class="row">
+			<div class="col-sm-12 save-form mx-2">
+				<button mat-raised-button (click)="createBanco()" color="primary">
+					Salvar
+				</button>
+				<button mat-raised-button (click)="cancel()" color="warn">
+					Cancelar
+				</button>
+			</div>
+		</div>
+		<br>
+	</div>
+</mat-card>
+
+<ul>
+	<li *ngFor="let banco of listaBancos; index as indexDoBanco">
+		{{ banco.nomeDoBanco }}
+		<button (click)="removeBancos(banco.id)">..L.</button>
+	</li>
+</ul>

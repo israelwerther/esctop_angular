@@ -101,5 +101,15 @@
       ],
       "id": 2
     }
+  ],
+  "banco": [
+    {
+      "nomeDoBanco": "caixa",
+      "id": 1
+    },
+    {
+      "nomeDoBanco": "asd",
+      "id": 2
+    }
   ]
 }
