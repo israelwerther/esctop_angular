@@ -1,5 +1,5 @@
 .footer {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: flex-end;
   height: 40px;
@@ -10,3 +10,4 @@
   font-size: 1.1rem;
   font-weight: 300;
 }
+

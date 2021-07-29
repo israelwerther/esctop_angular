@@ -104,12 +104,8 @@
   ],
   "banco": [
     {
-      "nomeDoBanco": "caixa",
+      "nomeDoBanco": "caixa economica",
       "id": 1
-    },
-    {
-      "nomeDoBanco": "asd",
-      "id": 2
     }
   ]
 }
