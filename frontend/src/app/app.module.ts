@@ -41,7 +41,7 @@ registerLocaleData(localePt);
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { AdminComponent } from './component/admin/admin.component';
+import { AdminComponent } from './components/admin/admin.component';
 
 
 @NgModule({
