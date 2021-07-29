@@ -1,8 +1,5 @@
-import { CrudAdminComponent } from './components/admin/crud-admin/crud-admin.component';
-import { BancoComponent } from './components/admin/banco/banco.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AdminComponent } from './components/admin/admin.component';
 import { CreateComponent } from './components/credcoop/create/create.component';
 import { CredcoopComponent } from './components/credcoop/credcoop.component';
 import { CrudCredcoopComponent } from './components/credcoop/crud-credcoop/crud-credcoop.component';
@@ -31,19 +28,7 @@ const routes: Routes = [
       },
 
     ]
-  },
-  {
-    path: 'admin', component: AdminComponent,
-    children: [
-      {
-        path: '', component: CrudAdminComponent,
-      },
-      {
-        path: 'banco', component: BancoComponent,
-      }
-    ]
   }
-
 ];
 
 @NgModule({

@@ -101,47 +101,5 @@
       ],
       "id": 2
     }
-  ],
-  "banco": [
-    {
-      "nomeDoBanco": "111111",
-      "id": 1
-    },
-    {
-      "nomeDoBanco": "asdasd",
-      "id": 2
-    },
-    {
-      "nomeDoBanco": "323123123",
-      "id": 3
-    },
-    {
-      "nomeDoBanco": "33333333",
-      "id": 4
-    },
-    {
-      "nomeDoBanco": "12312323123",
-      "id": 5
-    },
-    {
-      "nomeDoBanco": "321323",
-      "id": 6
-    },
-    {
-      "nomeDoBanco": "2222222222222222",
-      "id": 7
-    },
-    {
-      "nomeDoBanco": "3333333333333333",
-      "id": 8
-    },
-    {
-      "nomeDoBanco": "4444444444444444444",
-      "id": 9
-    },
-    {
-      "nomeDoBanco": "555555555555555555",
-      "id": 10
-    }
   ]
 }

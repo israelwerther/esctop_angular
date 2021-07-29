@@ -42,8 +42,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AdminComponent } from './components/admin/admin.component';
-import { BancoComponent } from './components/admin/banco/banco.component';
 import { CrudAdminComponent } from './components/admin/crud-admin/crud-admin.component';
+import { BancoComponent } from './components/admin/banco/banco.component';
 
 
 @NgModule({
@@ -60,8 +60,8 @@ import { CrudAdminComponent } from './components/admin/crud-admin/crud-admin.com
     HeaderComponent,
     FooterComponent,
     AdminComponent,
-    BancoComponent,
-    CrudAdminComponent
+    CrudAdminComponent,
+    BancoComponent
   ],
   imports: [
     BrowserModule,
