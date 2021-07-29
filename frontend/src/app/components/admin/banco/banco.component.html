@@ -44,9 +44,30 @@
 	</div>
 </mat-card>
 
+
+<mat-card class="mat-elevation-z5">
+  <table>
+    <tr>
+      <th> <b>BANCO</b></th>
+      <th> <b>APAGAR</b></th>
+    </tr>
+    <tr *ngFor="let banco of listaBancos; index as indexDoBanco">
+      <td >{{ banco.nomeDoBanco }}</td>
+      <td ><i class="material-icons" (click)="removeBancos(banco.id)">
+        restore_from_trash
+      </i></td>
+    </tr>
+  </table>
+</mat-card>
+
+<!--
 <ul>
-	<li *ngFor="let banco of listaBancos; index as indexDoBanco">
-		{{ banco.nomeDoBanco }}
-		<button (click)="removeBancos(banco.id)">..L.</button>
-	</li>
-</ul>
+	<p *ngFor="let banco of listaBancos; index as indexDoBanco">
+    <a mat-list-item >
+      {{ banco.nomeDoBanco }}
+      <i class="material-icons" (click)="removeBancos(banco.id)">
+        restore_from_trash
+      </i>
+    </a>
+	</p>
+</ul> -->
