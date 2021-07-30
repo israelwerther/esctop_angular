@@ -1,4 +1,4 @@
-import { BancoService } from './../../../sevices/banco.service';
+import { BancoService } from '../../../sevices/banco.service';
 import { CepService } from './../../../sevices/cep.service';
 import { ClienteCredcoop } from './../../../models/credcoop/clienteCredcoop.model';
 import { Router } from '@angular/router';

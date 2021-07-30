@@ -1,105 +1,125 @@
 {
-  "clienteCredcoop": [
+  "clienteCredcoop": [],
+  "banco": [
     {
-      "id": 1,
-      "name": "israel"
+      "nomeDoBanco": "1",
+      "id": 1
     },
     {
-      "dadosPessoais": {
-        "nome": "Recusandae Officia bland",
-        "cpf": "12312312312",
-        "rg": "Nam corporis ex ut molest",
-        "orgaoEmissor": "Dolorum vero dolor deseru",
-        "dataNascimento": "1991-04-07",
-        "naturalidade": "Quae error lorem exercita",
-        "nacionalidade": "Sit quos vel sint consect",
-        "estadoCivil": "In lorem voluptas volupta",
-        "nomeDaMae": "Voluptates quo facilis qu",
-        "nomeDoPai": "Quaerat minus cillum elig"
-      },
-      "dadosConjuge": {
-        "nomeConjuge": "Dicta rem natus nobis sun",
-        "cpfConjuge": "32132132112",
-        "contatoConjuge": "",
-        "whatsapp": true
-      },
-      "enderecos": [
-        {
-          "cep": "",
-          "rua": "Cupidatat voluptatem ven",
-          "bairro": "Corporis possimus dignis",
-          "uf": "Quia commodi quisquam eaq",
-          "cidade": "Soluta quod at deserunt n",
-          "numero": "Ad porro et similique dol",
-          "complemento": "Dolore ipsum officiis aut",
-          "pontoDeReferencia": "Consequuntur mollit provi"
-        }
-      ],
-      "contato": {
-        "fixo": [
-          {
-            "numero": "",
-            "ativo": true
-          }
-        ],
-        "celular": [
-          {
-            "numero": "",
-            "ativo": true,
-            "whatsapp": true
-          }
-        ],
-        "email": "tugyfy@mailinator.com"
-      },
-      "localDeTrabalho": {
-        "nomeFantasia": "",
-        "enderecos": [
-          {
-            "cep": "",
-            "rua": "",
-            "bairro": "",
-            "uf": "",
-            "cidade": "",
-            "numero": "",
-            "complemento": "",
-            "pontoDeReferencia": ""
-          }
-        ],
-        "contato": {
-          "fixo": [
-            {
-              "numero": "",
-              "ativo": true
-            }
-          ],
-          "celular": [
-            {
-              "numero": "",
-              "ativo": true,
-              "whatsapp": false
-            }
-          ],
-          "email": ""
-        },
-        "observacoes": ""
-      },
-      "dadosBancarios": [
-        {
-          "banco": "",
-          "numeroDaOperacao": "",
-          "tipoDeConta": "",
-          "numeroDaAgencia": "",
-          "numeroDaconta": ""
-        }
-      ],
-      "referencias": [
-        {
-          "nome": "",
-          "contato": "",
-          "parentesco": ""
-        }
-      ],
+      "nomeDoBanco": "5",
       "id": 2
+    },
+    {
+      "nomeDoBanco": "2",
+      "id": 3
+    },
+    {
+      "nomeDoBanco": "3",
+      "id": 4
+    },
+    {
+      "nomeDoBanco": "4",
+      "id": 5
+    },
+    {
+      "nomeDoBanco": "6",
+      "id": 6
+    },
+    {
+      "nomeDoBanco": "7",
+      "id": 7
+    },
+    {
+      "nomeDoBanco": "8",
+      "id": 8
+    },
+    {
+      "nomeDoBanco": "9",
+      "id": 9
+    },
+    {
+      "nomeDoBanco": "10",
+      "id": 10
+    },
+    {
+      "nomeDoBanco": "123",
+      "id": 11
+    },
+    {
+      "nomeDoBanco": "123",
+      "id": 12
+    },
+    {
+      "nomeDoBanco": "123",
+      "id": 13
+    },
+    {
+      "nomeDoBanco": "qwe",
+      "id": 14
+    },
+    {
+      "nomeDoBanco": "qwe",
+      "id": 15
+    },
+    {
+      "nomeDoBanco": "qewqwe",
+      "id": 16
+    },
+    {
+      "nomeDoBanco": "wqeqw",
+      "id": 17
+    },
+    {
+      "nomeDoBanco": "eeee",
+      "id": 18
+    },
+    {
+      "nomeDoBanco": "dsadsdad",
+      "id": 19
+    },
+    {
+      "nomeDoBanco": "dsadsadas",
+      "id": 20
+    },
+    {
+      "nomeDoBanco": "dddddd",
+      "id": 21
+    },
+    {
+      "nomeDoBanco": "123123",
+      "id": 22
+    },
+    {
+      "nomeDoBanco": "32123",
+      "id": 23
+    },
+    {
+      "nomeDoBanco": "123213",
+      "id": 24
+    },
+    {
+      "nomeDoBanco": "33333",
+      "id": 25
+    },
+    {
+      "nomeDoBanco": "23123123",
+      "id": 26
+    },
+    {
+      "nomeDoBanco": "dsadsdas",
+      "id": 27
+    },
+    {
+      "nomeDoBanco": "sdasdasd",
+      "id": 28
+    },
+    {
+      "nomeDoBanco": "asdasdasd",
+      "id": 29
+    },
+    {
+      "nomeDoBanco": "999999999999",
+      "id": 30
     }
   ]
 }
