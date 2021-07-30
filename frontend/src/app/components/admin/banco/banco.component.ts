@@ -4,7 +4,6 @@ import { Component, OnInit } from '@angular/core';
 import { Banco } from './banco.model';
 
 
-
 @Component({
   selector: 'app-banco',
   templateUrl: './banco.component.html',
@@ -15,6 +14,8 @@ export class BancoComponent implements OnInit {
   bancos: Banco[] = [{
     nomeDoBanco: ''
   }];
+
+
 
   listaBancos: any[]= []
 

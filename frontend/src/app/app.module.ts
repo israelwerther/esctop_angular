@@ -44,7 +44,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { CrudAdminComponent } from './components/admin/crud-admin/crud-admin.component';
 import { BancoComponent } from './components/admin/banco/banco.component';
-
+import { TablePageComponent } from './components/admin/table-page/table-page.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +61,8 @@ import { BancoComponent } from './components/admin/banco/banco.component';
     FooterComponent,
     AdminComponent,
     CrudAdminComponent,
-    BancoComponent
+    BancoComponent,
+    TablePageComponent,
   ],
   imports: [
     BrowserModule,
