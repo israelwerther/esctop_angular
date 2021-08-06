@@ -517,8 +517,20 @@
 	</mat-tab>
 
 	<mat-tab label="Referências">
-		<mat-card>
-			<form class="mat-elevation-z5">
+    <mat-card>
+      <form class="mat-elevation-z5">
+
+        <div class="row">
+          <div class="col-sm-12 py-2">
+            <mat-card-title class="w-100">
+              FIADOR
+            </mat-card-title>
+            <mat-checkbox [(ngModel)]="clienteCredcoop.dadosConjuge.whatsapp" name="fiador">
+              ELE MESMO
+            </mat-checkbox>
+          </div>
+        </div>
+
 				<div class="row" *ngFor="let referencia of clienteCredcoop.referencias; index as indexDaReferencia">
 					<div class="col-sm-12 py-2">
 						<mat-card-title class="w-100">

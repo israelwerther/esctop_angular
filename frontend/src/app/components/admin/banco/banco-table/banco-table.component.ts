@@ -1,18 +1,19 @@
-import { Banco } from './../banco/banco.model';
-import { AfterViewInit, Component, ViewChild } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
-import { MatSort } from '@angular/material/sort';
-import { MatTable } from '@angular/material/table';
 import { BancoService } from 'src/app/sevices/banco.service';
-import { TablePageDataSource } from './table-page-datasource';
+import { BancoTableDataSource } from './banco-table-datasource';
+import { Banco } from './../../table-page/banco.model';
+import { MatTable } from '@angular/material/table';
+import { MatSort } from '@angular/material/sort';
+import { MatPaginator } from '@angular/material/paginator';
+import { Component, AfterViewInit, ViewChild } from '@angular/core';
+
 
 
 @Component({
-  selector: 'app-table-page',
-  templateUrl: './table-page.component.html',
-  styleUrls: ['./table-page.component.css']
+  selector: 'app-banco-table',
+  templateUrl: './banco-table.component.html',
+  styleUrls: ['./banco-table.component.css']
 })
-export class TablePageComponent implements AfterViewInit {
+export class BancoTableComponent implements AfterViewInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
   @ViewChild(MatTable) table!: MatTable<Banco>;
@@ -26,13 +27,13 @@ export class TablePageComponent implements AfterViewInit {
     this.getBancos()
   }
 
-  dataSource: TablePageDataSource;
+  dataSource: BancoTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
   displayedColumns = ['id', 'nomeDoBanco'];
 
   constructor(private bancoService: BancoService) {
-    this.dataSource = new TablePageDataSource();
+    this.dataSource = new BancoTableDataSource();
   }
 
   ngAfterViewInit(): void {

@@ -45,6 +45,7 @@ import { AdminComponent } from './components/admin/admin.component';
 import { CrudAdminComponent } from './components/admin/crud-admin/crud-admin.component';
 import { BancoComponent } from './components/admin/banco/banco.component';
 import { TablePageComponent } from './components/admin/table-page/table-page.component';
+import { BancoTableComponent } from './components/admin/banco/banco-table/banco-table.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import { TablePageComponent } from './components/admin/table-page/table-page.com
     CrudAdminComponent,
     BancoComponent,
     TablePageComponent,
+    BancoTableComponent,
   ],
   imports: [
     BrowserModule,

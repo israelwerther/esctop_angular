@@ -1,101 +1,159 @@
 {
-  "clienteCredcoop": [],
+  "clienteCredcoop": [
+    {
+      "dadosPessoais": {
+        "nome": "er er er ",
+        "cpf": "12312312333",
+        "rg": "Numquam eligendi officiis",
+        "orgaoEmissor": "In rerum sequi aliquam ut",
+        "dataNascimento": "2021-05-12",
+        "naturalidade": "Ut accusantium et culpa ",
+        "nacionalidade": "Dolore vero enim asperior",
+        "estadoCivil": "Veniam corporis sit eiu",
+        "nomeDaMae": "Magni enim ut id asperna",
+        "nomeDoPai": "Esse quisquam rem molest"
+      },
+      "dadosConjuge": {
+        "nomeConjuge": "Amet molestiae a odit ea",
+        "cpfConjuge": "33321231231",
+        "contatoConjuge": "",
+        "whatsapp": true
+      },
+      "enderecos": [
+        {
+          "cep": "",
+          "rua": "Dolor aut et quibusdam ma",
+          "bairro": "Sint aut excepteur labori",
+          "uf": "Vel commodo dolorem magni",
+          "cidade": "Cillum hic nulla possimus",
+          "numero": "Iure tempora qui eu velit",
+          "complemento": "Expedita duis qui digniss",
+          "pontoDeReferencia": "Non voluptas fugiat ullam"
+        }
+      ],
+      "contato": {
+        "fixo": [
+          {
+            "numero": "",
+            "ativo": true
+          }
+        ],
+        "celular": [
+          {
+            "numero": "",
+            "ativo": true,
+            "whatsapp": true
+          }
+        ],
+        "email": "konysob@mailinator.com"
+      },
+      "localDeTrabalho": {
+        "nomeFantasia": "",
+        "enderecos": [
+          {
+            "cep": "",
+            "rua": "",
+            "bairro": "",
+            "uf": "",
+            "cidade": "",
+            "numero": "",
+            "complemento": "",
+            "pontoDeReferencia": ""
+          }
+        ],
+        "contato": {
+          "fixo": [
+            {
+              "numero": "",
+              "ativo": true
+            }
+          ],
+          "celular": [
+            {
+              "numero": "",
+              "ativo": true,
+              "whatsapp": false
+            }
+          ],
+          "email": ""
+        },
+        "observacoes": ""
+      },
+      "dadosBancarios": [
+        {
+          "banco": "",
+          "numeroDaOperacao": "",
+          "tipoDeConta": "",
+          "numeroDaAgencia": "",
+          "numeroDaconta": ""
+        }
+      ],
+      "referencias": [
+        {
+          "nome": "",
+          "contato": "",
+          "parentesco": ""
+        }
+      ],
+      "id": 1
+    }
+  ],
   "banco": [
     {
-      "nomeDoBanco": "6",
+      "nomeDoBanco": "CAIXA ECONOMICA FEDERAL",
+      "id": 1
+    },
+    {
+      "nomeDoBanco": "BRADESCO",
+      "id": 2
+    },
+    {
+      "nomeDoBanco": "ITAU",
+      "id": 3
+    },
+    {
+      "nomeDoBanco": "SANTANDER",
+      "id": 4
+    },
+    {
+      "nomeDoBanco": "BOVESPA",
+      "id": 5
+    },
+    {
+      "nomeDoBanco": "PIX",
       "id": 6
     },
     {
-      "nomeDoBanco": "7",
+      "nomeDoBanco": "POUPANÇA BANMERINDOS",
       "id": 7
     },
     {
-      "nomeDoBanco": "8",
+      "nomeDoBanco": "Inter",
       "id": 8
     },
     {
-      "nomeDoBanco": "9",
+      "nomeDoBanco": "Votorantim",
       "id": 9
     },
     {
-      "nomeDoBanco": "10",
+      "nomeDoBanco": "Banrisul",
       "id": 10
     },
     {
-      "nomeDoBanco": "123",
+      "nomeDoBanco": "Banco ABC Brasil S.A.",
       "id": 11
     },
     {
-      "nomeDoBanco": "123",
+      "nomeDoBanco": "Banco Agibank S.A.",
       "id": 12
     },
     {
-      "nomeDoBanco": "123",
+      "nomeDoBanco": "Banco Cooperativo Sicredi S.A.",
       "id": 13
     },
     {
-      "nomeDoBanco": "qwe",
+      "nomeDoBanco": "Advanced Cc Ltda",
       "id": 14
-    },
-    {
-      "nomeDoBanco": "qwe",
-      "id": 15
-    },
-    {
-      "nomeDoBanco": "qewqwe",
-      "id": 16
-    },
-    {
-      "nomeDoBanco": "wqeqw",
-      "id": 17
-    },
-    {
-      "nomeDoBanco": "eeee",
-      "id": 18
-    },
-    {
-      "nomeDoBanco": "dsadsdad",
-      "id": 19
-    },
-    {
-      "nomeDoBanco": "dsadsadas",
-      "id": 20
-    },
-    {
-      "nomeDoBanco": "dddddd",
-      "id": 21
-    },
-    {
-      "nomeDoBanco": "123123",
-      "id": 22
-    },
-    {
-      "nomeDoBanco": "32123",
-      "id": 23
-    },
-    {
-      "nomeDoBanco": "123213",
-      "id": 24
-    },
-    {
-      "nomeDoBanco": "33333",
-      "id": 25
-    },
-    {
-      "nomeDoBanco": "23123123",
-      "id": 26
-    },
-    {
-      "nomeDoBanco": "dsadsdas",
-      "id": 27
-    },
-    {
-      "nomeDoBanco": "sdasdasd",
-      "id": 28
-    },
-    {
-      "nomeDoBanco": "asdasdasd",
-      "id": 29
     }
   ]
 }

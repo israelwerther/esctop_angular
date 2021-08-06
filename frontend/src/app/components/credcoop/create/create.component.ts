@@ -235,6 +235,7 @@ export class CreateComponent implements OnInit {
       this.clienteCredcoopService.showMessage('Cliente Criado com Sucesso!');
       this.router.navigate(['/credcoop']);
     });
+    // localStorage.setItem('clienteCredcoop', JSON.stringify(this.clienteCredcoop))
   }
 
   cancel(): void {
