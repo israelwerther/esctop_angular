@@ -2,26 +2,6 @@
   "clienteCredcoop": [],
   "banco": [
     {
-      "nomeDoBanco": "1",
-      "id": 1
-    },
-    {
-      "nomeDoBanco": "5",
-      "id": 2
-    },
-    {
-      "nomeDoBanco": "2",
-      "id": 3
-    },
-    {
-      "nomeDoBanco": "3",
-      "id": 4
-    },
-    {
-      "nomeDoBanco": "4",
-      "id": 5
-    },
-    {
       "nomeDoBanco": "6",
       "id": 6
     },
@@ -116,10 +96,6 @@
     {
       "nomeDoBanco": "asdasdasd",
       "id": 29
-    },
-    {
-      "nomeDoBanco": "999999999999",
-      "id": 30
     }
   ]
 }

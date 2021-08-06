@@ -6,6 +6,7 @@ import { MatTable } from '@angular/material/table';
 import { BancoService } from 'src/app/sevices/banco.service';
 import { TablePageDataSource } from './table-page-datasource';
 
+
 @Component({
   selector: 'app-table-page',
   templateUrl: './table-page.component.html',
@@ -16,7 +17,17 @@ export class TablePageComponent implements AfterViewInit {
   @ViewChild(MatSort) sort!: MatSort;
   @ViewChild(MatTable) table!: MatTable<Banco>;
 
+  bancos: Banco[] = [{
+    nomeDoBanco: ''
+  }];
 
+
+
+  listaBancos: any[]= []
+
+  ngOnInit(): void {
+    this.getBancos()
+  }
 
 
 
@@ -38,6 +49,13 @@ export class TablePageComponent implements AfterViewInit {
     this.bancoService.getBancos().subscribe(bancos => {
       this.dataSource.data = bancos
       this.table.dataSource = this.dataSource
+    })
+  }
+
+  removeBancos(id: number): void {
+    // this.listaBancos.splice(id, 1)
+    this.bancoService.delete(id).subscribe(response => {
+      this.getBancos()
     })
   }
 }

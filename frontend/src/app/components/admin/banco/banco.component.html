@@ -44,20 +44,22 @@
 	</div>
 </mat-card>
 
-<mat-card class="mat-elevation-z5">
+<!-- <mat-card class="mat-elevation-z5">
   <table>
     <tr>
-      <th> <b>BANCO</b></th>
-      <th> <b>APAGAR</b></th>
+      <th><b>BANCO</b></th>
+      <th><b>APAGAR</b></th>
     </tr>
     <tr *ngFor="let banco of listaBancos; index as indexDoBanco">
-      <td >{{ banco.nomeDoBanco }}</td>
-      <td ><i class="material-icons" (click)="removeBancos(banco.id)">
-        restore_from_trash
-      </i></td>
+      <td>{{ banco.nomeDoBanco }}</td>
+      <td>
+        <i class="material-icons" (click)="removeBancos(banco.id)">
+          restore_from_trash
+        </i>
+      </td>
     </tr>
   </table>
-</mat-card>
+</mat-card> -->
 
 <app-table-page></app-table-page>
 
