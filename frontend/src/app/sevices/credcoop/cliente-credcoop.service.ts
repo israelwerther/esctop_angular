@@ -27,7 +27,6 @@ export class ClienteCredcoopService {
     })
   }
 
-  // Insere um novo produto no backend
   create(clienteCredcoop: ClienteCredcoop): Observable<ClienteCredcoop> {
     return this.http.post<ClienteCredcoop>(this.baseUrl, clienteCredcoop)
   }
