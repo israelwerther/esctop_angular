@@ -4,6 +4,7 @@ import { EnderecoCredcoop } from './enderecoCredcoop.model';
 import { Referencias } from './referencias.model';
 export interface ClienteCredcoop {
     // ? torna o id opcional
+    fiador?: any;
     id?: number;
     dadosPessoais: {
         nome: string;

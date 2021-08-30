@@ -525,9 +525,22 @@
             <mat-card-title class="w-100">
               FIADOR
             </mat-card-title>
-            <mat-checkbox [(ngModel)]="clienteCredcoop.dadosConjuge.whatsapp" name="fiador">
+            <mat-checkbox [(ngModel)]="clienteCredcoop.dadosConjuge.whatsapp">
               ELE MESMO
             </mat-checkbox>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <mat-form-field>
+              <mat-label>Escolha um Fiador Cadastrado</mat-label>
+              <mat-select matInput [(ngModel)]="clienteCredcoop.fiador" name="fiador">
+                <mat-option *ngFor="let fiador of this.clientesCredcoop" [value]="fiador.id">
+                  {{fiador.dadosPessoais.nome}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
           </div>
         </div>
 

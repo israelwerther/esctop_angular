@@ -13,8 +13,10 @@ import { ClienteCredcoopService } from 'src/app/sevices/credcoop/cliente-credcoo
 
 export class CreateComponent implements OnInit {
   bancos: any = []
+  clientesCredcoop: ClienteCredcoop[] = []
 
   clienteCredcoop: ClienteCredcoop = {
+    fiador: '',
     dadosPessoais: {
       nome: '',
       cpf: '',
@@ -107,16 +109,25 @@ export class CreateComponent implements OnInit {
     }],
   };
 
-  constructor(private clienteCredcoopService: ClienteCredcoopService,
+  constructor(
+    private clienteCredcoopService: ClienteCredcoopService,
     private router: Router,
     private cepService: CepService,
     private bancoService: BancoService
     ) { }
 
   ngOnInit(): void {
-    this.bancoService.getBancos().subscribe((bancos) => this.bancos = bancos);
+
+
+    this.bancoService.getBancos().subscribe((response) => this.bancos = response);
+    this.clienteCredcoopService.getClientesCredcoop().subscribe((response) => this.clientesCredcoop = response);
+
+    this.clienteCredcoopService.getClientesCredcoopDoDjango().subscribe((response) => console.log(response));
   }
 
+  log(valor: any): void {
+    console.log(valor)
+  }
   // adiciona um component de formulário; contato e endereços, por exemplo
   addForm(add: string): void {
     if(add == 'addEnderecoPessoal') {
