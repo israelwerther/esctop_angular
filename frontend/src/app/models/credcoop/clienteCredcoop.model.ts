@@ -1,44 +1,40 @@
-import { ContatoCredcoop } from '../contatoCredcoop.model';
-import { DadosBancarios } from './dadosBancarios.model';
-import { EnderecoCredcoop } from './enderecoCredcoop.model';
-import { Referencias } from './referencias.model';
+import { Endereco } from './../endereco.model';
+import { LocalDeTrabalho } from '../localDeTrabalho.model';
+import { DadosPessoais } from '../dadosPessoais.model';
+import { Contato } from '../contato.model';
+import { DadosBancarios } from './../dadosBancarios.model';
+import { Referencias } from '../referencias.model';
+
 export interface ClienteCredcoop {
     // ? torna o id opcional
-    fiador?: any;
+    // fiador?: any;
     id?: number;
-    dadosPessoais: {
-        nome: string;
-        cpf: string;
-        rg: string;
-        orgaoEmissor: string;
-        dataNascimento: string;
-        naturalidade: string;
-        nacionalidade: string;
-        estadoCivil: string;
-        nomeDaMae: string;
-        nomeDoPai: string;
-    };
-    dadosConjuge: {
-        nomeConjuge: string;
-        cpfConjuge: string;
-        contatoConjuge: string;
-        whatsapp: boolean;
-    };
-    enderecos: [
-        EnderecoCredcoop
+
+    dadosPessoais: DadosPessoais
+
+    // dadosConjuge: {
+    //     nomeConjuge: string;
+    //     cpfConjuge: string;
+    //     contatoConjuge: string;
+    //     whatsapp: boolean;
+    // };
+
+    endereco: [
+        Endereco
     ];
-    contato: ContatoCredcoop;
-    localDeTrabalho: {
-        nomeFantasia: string;
-        contato: ContatoCredcoop;
-        enderecos: [
-            EnderecoCredcoop
-        ]
-        observacoes: string;
-    }
+
+    contato: [
+      Contato
+    ];
+
+    localDeTrabalho: [
+      LocalDeTrabalho
+    ];
+
     dadosBancarios: [
         DadosBancarios
     ];
+
     referencias: [
         Referencias
     ];

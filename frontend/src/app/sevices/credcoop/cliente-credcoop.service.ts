@@ -10,7 +10,7 @@ import { ClienteCredcoop } from 'src/app/models/credcoop/clienteCredcoop.model';
 })
 export class ClienteCredcoopService {
 
-  baseUrl = "http://localhost:3001/clienteCredcoop"
+  baseUrl = "http://127.0.0.1:8000/api/credcoop/list"
   private httpOptions: any
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {
@@ -36,6 +36,6 @@ export class ClienteCredcoopService {
   }
 
   getClientesCredcoopDoDjango(): Observable<any> {
-    return this.http.get<any>('http://127.0.0.1:8000/credcoop/api/credcoop', this.httpOptions)
+    return this.http.get<any>('http://127.0.0.1:8000/api/credcoop/list', this.httpOptions)
   }
 }

@@ -16,97 +16,55 @@ export class CreateComponent implements OnInit {
   clientesCredcoop: ClienteCredcoop[] = []
 
   clienteCredcoop: ClienteCredcoop = {
-    fiador: '',
+    // fiador: '',
     dadosPessoais: {
       nome: '',
       cpf: '',
       rg: '',
-      orgaoEmissor: '',
-      dataNascimento: '',
-      naturalidade: '',
-      nacionalidade: 'Brasileira',
-      estadoCivil: '',
-      nomeDaMae: '',
-      nomeDoPai: '',
     },
-    dadosConjuge: {
-      nomeConjuge: '',
-      cpfConjuge: '',
-      contatoConjuge: '',
-      whatsapp: false,
-    },
-    enderecos: [
+    // dadosConjuge: {
+    //   nomeConjuge: '',
+    //   cpfConjuge: '',
+    //   contatoConjuge: '',
+    //   whatsapp: false,
+    // },
+    endereco: [
       {
         cep: '',
         rua: '',
-        bairro: '',
-        uf: '',
-        cidade: '',
         numero: '',
-        complemento: '',
-        pontoDeReferencia: '',
       }
     ],
-    contato: {
-      fixo: [
-        {
-          numero: '',
-          ativo: true
-        }
-      ],
-      celular: [
-        {
-          numero: '',
-          ativo: true,
-          whatsapp: false
-        }
-      ],
-      email: ''
-    },
-    localDeTrabalho: {
-      nomeFantasia: '',
-      enderecos: [
-        {
-          cep: '',
-          rua: '',
-          bairro: '',
-          uf: '',
-          cidade: '',
-          numero: '',
-          complemento: '',
-          pontoDeReferencia: '',
-        }
-      ],
-      contato: {
-        fixo: [
-          {
-            numero: '',
-            ativo: true
-          }
-        ],
-        celular: [
-          {
-            numero: '',
-            ativo: true,
-            whatsapp: false
-          }
-        ],
-        email: ''
-      },
-      observacoes: ''
-    },
+
+    contato: [
+      {
+        numero: '',
+        whatsapp: false,
+      }
+    ],
+
+    localDeTrabalho: [
+      {
+        nomeFantasia: '',
+      }
+    ],
+
     dadosBancarios: [{
-      banco: '',
-      numeroDaOperacao: '',
-      tipoDeConta: '',
-      numeroDaAgencia: '',
-      numeroDaconta: '',
+      n_operacao: '',
+      tipo_de_conta: '',
+      agencia: '',
+      conta: '',
     }],
+
     referencias: [{
       nome: '',
-      contato: '',
+      contato: {
+        numero: '',
+        whatsapp: false
+      },
       parentesco: '',
     }],
+
   };
 
   constructor(
@@ -118,7 +76,6 @@ export class CreateComponent implements OnInit {
 
   ngOnInit(): void {
 
-
     this.bancoService.getBancos().subscribe((response) => this.bancos = response);
     this.clienteCredcoopService.getClientesCredcoop().subscribe((response) => this.clientesCredcoop = response);
 
@@ -129,117 +86,117 @@ export class CreateComponent implements OnInit {
     console.log(valor)
   }
   // adiciona um component de formulário; contato e endereços, por exemplo
-  addForm(add: string): void {
-    if(add == 'addEnderecoPessoal') {
-      this.clienteCredcoop.enderecos.push(
-        {
-          cep: '',
-          rua: '',
-          bairro: '',
-          uf: '',
-          cidade: '',
-          numero: '',
-          complemento: '',
-          pontoDeReferencia: '',
-        }
-      );
-    }
-    else if(add == 'addFixo') {
-      this.clienteCredcoop.contato.fixo.push(
-        {
-          numero: '',
-          ativo: true
-        }
-      );
-    }
-    else if(add == 'addCelular') {
-      this.clienteCredcoop.contato.celular.push(
-        {
-          numero: '',
-          ativo: true,
-          whatsapp: false
-        }
-      );
-    }
-    else if(add == 'addEnderecoTrabalho') {
-      this.clienteCredcoop.localDeTrabalho.enderecos.push(
-        {
-          cep: '',
-          rua: '',
-          bairro: '',
-          uf: '',
-          cidade: '',
-          numero: '',
-          complemento: '',
-          pontoDeReferencia: '',
-        }
-      );
-    }
-    else if(add == 'addFixoTrabalho') {
-      this.clienteCredcoop.localDeTrabalho.contato.fixo.push(
-        {
-          numero: '',
-          ativo: true
-        }
-      );
-    }
-    else if(add == 'addCelularTrabalho') {
-      this.clienteCredcoop.localDeTrabalho.contato.celular.push(
-        {
-          numero: '',
-          ativo: true,
-          whatsapp: false
-        }
-      );
-    }
-    else if(add == 'addContaBancaria') {
-      this.clienteCredcoop.dadosBancarios.push(
-        {
-          banco: '',
-          numeroDaOperacao: '',
-          tipoDeConta: '',
-          numeroDaAgencia: '',
-          numeroDaconta: '',
-        }
-      );
-    }
-    else if(add == 'addReferencia') {
-      this.clienteCredcoop.referencias.push(
-        {
-          nome: '',
-          contato: '',
-          parentesco: '',
-        }
-      );
-    }
-  }
+  // addForm(add: string): void {
+  //   if(add == 'addEnderecoPessoal') {
+  //     this.clienteCredcoop.enderecos.push(
+  //       {
+  //         cep: '',
+  //         rua: '',
+  //         bairro: '',
+  //         uf: '',
+  //         cidade: '',
+  //         numero: '',
+  //         complemento: '',
+  //         pontoDeReferencia: '',
+  //       }
+  //     );
+  //   }
+  //   else if(add == 'addFixo') {
+  //     this.clienteCredcoop.contato.fixo.push(
+  //       {
+  //         numero: '',
+  //         ativo: true
+  //       }
+  //     );
+  //   }
+  //   else if(add == 'addCelular') {
+  //     this.clienteCredcoop.contato.celular.push(
+  //       {
+  //         numero: '',
+  //         ativo: true,
+  //         whatsapp: false
+  //       }
+  //     );
+  //   }
+  //   else if(add == 'addEnderecoTrabalho') {
+  //     this.clienteCredcoop.localDeTrabalho.enderecos.push(
+  //       {
+  //         cep: '',
+  //         rua: '',
+  //         bairro: '',
+  //         uf: '',
+  //         cidade: '',
+  //         numero: '',
+  //         complemento: '',
+  //         pontoDeReferencia: '',
+  //       }
+  //     );
+  //   }
+  //   else if(add == 'addFixoTrabalho') {
+  //     this.clienteCredcoop.localDeTrabalho.contato.fixo.push(
+  //       {
+  //         numero: '',
+  //         ativo: true
+  //       }
+  //     );
+  //   }
+  //   else if(add == 'addCelularTrabalho') {
+  //     this.clienteCredcoop.localDeTrabalho.contato.celular.push(
+  //       {
+  //         numero: '',
+  //         ativo: true,
+  //         whatsapp: false
+  //       }
+  //     );
+  //   }
+  //   else if(add == 'addContaBancaria') {
+  //     this.clienteCredcoop.dadosBancarios.push(
+  //       {
+  //         banco: '',
+  //         numeroDaOperacao: '',
+  //         tipoDeConta: '',
+  //         numeroDaAgencia: '',
+  //         numeroDaconta: '',
+  //       }
+  //     );
+  //   }
+  //   else if(add == 'addReferencia') {
+  //     this.clienteCredcoop.referencias.push(
+  //       {
+  //         nome: '',
+  //         contato: '',
+  //         parentesco: '',
+  //       }
+  //     );
+  //   }
+  // }
 
-  removeForm(remove: string): void {
-    if(remove == 'removeEnderecoPessoal') {
-      this.clienteCredcoop.enderecos.pop();
-    }
-    else if(remove == 'removeFixo') {
-      this.clienteCredcoop.contato.fixo.pop();
-    }
-    else if(remove == 'removeCelular') {
-      this.clienteCredcoop.contato.celular.pop();
-    }
-    else if(remove == 'removeEnderecoTrabalho') {
-      this.clienteCredcoop.localDeTrabalho.enderecos.pop();
-    }
-    else if(remove == 'removeFixoTrabalho') {
-      this.clienteCredcoop.localDeTrabalho.contato.fixo.pop();
-    }
-    else if(remove == 'removeCelularTrabalho') {
-      this.clienteCredcoop.localDeTrabalho.contato.celular.pop();
-    }
-    else if(remove == 'removeContaBancaria') {
-      this.clienteCredcoop.dadosBancarios.pop();
-    }
-    else if(remove == 'removeReferencia') {
-      this.clienteCredcoop.referencias.pop();
-    }
-  }
+  // removeForm(remove: string): void {
+  //   if(remove == 'removeEnderecoPessoal') {
+  //     this.clienteCredcoop.enderecos.pop();
+  //   }
+  //   else if(remove == 'removeFixo') {
+  //     this.clienteCredcoop.contato.fixo.pop();
+  //   }
+  //   else if(remove == 'removeCelular') {
+  //     this.clienteCredcoop.contato.celular.pop();
+  //   }
+  //   else if(remove == 'removeEnderecoTrabalho') {
+  //     this.clienteCredcoop.localDeTrabalho.enderecos.pop();
+  //   }
+  //   else if(remove == 'removeFixoTrabalho') {
+  //     this.clienteCredcoop.localDeTrabalho.contato.fixo.pop();
+  //   }
+  //   else if(remove == 'removeCelularTrabalho') {
+  //     this.clienteCredcoop.localDeTrabalho.contato.celular.pop();
+  //   }
+  //   else if(remove == 'removeContaBancaria') {
+  //     this.clienteCredcoop.dadosBancarios.pop();
+  //   }
+  //   else if(remove == 'removeReferencia') {
+  //     this.clienteCredcoop.referencias.pop();
+  //   }
+  // }
 
   createClienteCredcoop(): void {
     this.clienteCredcoopService.create(this.clienteCredcoop).subscribe(() => {
